@@ -1,0 +1,34 @@
+<div class="section" id="blog">
+  <div class="container cc-education">
+    <div class="titlee h2 text-center mb-4 title">Blog <i class="fa fa-blog"></i></div>
+
+    <div class="row">
+
+      <div *ngFor="let item of feed_data; let i = index" style="animation-direction: alternate;"
+        class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft" data-aos="flip-left">>
+        <div class="box1 ">
+          <div class="card">
+            <img style="padding: 2px;" class="card-img-top" src={{item.img}} alt="Card image cap">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title"><b>{{item.title}}</b></h5>
+
+              <span style="margin-left: 3px;margin-bottom: 3px;font-size: 15px;background-color: #00334D;"
+                *ngFor="let tag of item.categories; let i = index" class="badge badge-dark">#{{tag}}</span>
+              <p>{{feed_data.pubDate}}</p>
+              <!-- <div [innerHTML]="item.content"></div> -->
+
+              <a style="float: right;color: #00334D;margin-bottom: 10px;" href="{{item.link}}"><b>Read
+                  Article...</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>

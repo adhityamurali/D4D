@@ -1,0 +1,73 @@
+.imgprop {
+  //margin: auto;
+  max-height: 90px !important;
+  max-width: 80px !important;
+  padding: .25rem !important;
+  background-color: #100f0f !important;
+  border: 1px solid #100f0f !important;
+  border-radius: .25rem !important;
+  transition: all .2s ease-in-out !important;
+}
+
+.imgdesc {
+  font-size: 22px;
+
+  color: white;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  //Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow {
+  display: inline-block;
+  transition-duration: .3s;
+  transition-property: transform;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.row {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .imgdesc {
+    color: white;
+  }
+
+  .row {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 10px;
+  }
+
+  p {
+    margin-left: -40px;
+  }
+
+}
