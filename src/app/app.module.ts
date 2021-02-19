@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -23,7 +25,7 @@ const config: ExtraOptions = {
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,BrowserAnimationsModule,
     RouterModule.forRoot(routes, config),
     ProfileModule,
     HttpClientModule

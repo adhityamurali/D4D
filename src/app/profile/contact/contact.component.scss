@@ -1,4 +1,72 @@
 span {
-  margin-right: 20px;
-  margin-top: -2px;
+    margin-right: 20px;
+    margin-top: -2px;
+}
+
+.contact-row .contact-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #212628;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+element.style {}
+
+.bg-grey .form-control {
+    background: #fff;
+}
+
+.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+textarea,
+select,
+textarea.form-control {
+    background: #334c5f;
+    ;
+    padding: 7px 20px 5px;
+    height: 50px;
+    line-height: 1.55;
+    border: solid 1px #dbdbdb;
+    color: #f8f9fa;
+    width: 100%;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    -moz-transition: border-color 200ms ease-in;
+    -webkit-transition: border-color 200ms ease-in;
+    transition: border-color 200ms ease-in;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.nav-list li a:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.contact-row .contact-box {
+    //background: url(../images/bg/form-bg.jpg) no-repeat 50% 0 fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 600px;
+}
+
+.contact-box {
+    padding: 65px 350px 75px;
 }
