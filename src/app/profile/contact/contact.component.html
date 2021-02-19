@@ -1,4 +1,4 @@
-<div class="section" id="contact">
+<!-- <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
     <div class="container">
       <div class="cc-contact">
@@ -10,9 +10,7 @@
                 <div class="col-md-12">
                   <div class="card-body">
 
-                    <!--  <div class="p pb-3">
-                        <strong>Feel free to contact me </strong>
-                      </div> -->
+                   
                     <div class="row mb-3">
                       <div class="col">
                         <div class="input-group">
@@ -20,23 +18,11 @@
 
 
                           Wanna build Websites or App ?
-                          <!--   <input class="form-control" type="text" name="name" placeholder="Name"
-                              [(ngModel)]="model.name" #name="ngModel"
-                              [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required /> -->
-                        </div>
-                      </div>
-                    </div>
-                    <!--  <div class="row mb-3">
-                      <div class="col">
-                        <div class="input-group">
-                          <span>
-                            <i class="fa fa-cogs fa-2x"></i>
-                          </span>
-                          Wanna Automate your monotonous work on websites for you?
                          
                         </div>
                       </div>
-                    </div> -->
+                    </div>
+                    
                     <div class="row mb-3">
                       <div class="col">
                         <div class="input-group">
@@ -44,10 +30,7 @@
                             <i class="fa fa-code fa-2x"></i>
                           </span>
                           Aspiring to be a developer? But no idea how to start?
-                          <!--  <input class="form-control" type="text" name="email" placeholder="E-mail"
-                              [(ngModel)]="model.email" #email="ngModel"
-                              [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required /> -->
+                         
                         </div>
                       </div>
                     </div>
@@ -58,10 +41,7 @@
                             <i class="fa fa-tasks fa-2x"></i>
                           </span>
                           Wanna Collaborate or pitch in for some Fun/Real projects?
-                          <!--  <input class="form-control" type="text" name="email" placeholder="E-mail"
-                              [(ngModel)]="model.email" #email="ngModel"
-                              [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required /> -->
+                       
                         </div>
                       </div>
                     </div>
@@ -73,22 +53,11 @@
                             <i class="fa fa-question fa-2x"></i>
                           </span>
                           Maybe wanna learn something new or anything to ask?
-                          <!--  <input class="form-control" type="text" name="email" placeholder="E-mail"
-                              [(ngModel)]="model.email" #email="ngModel"
-                              [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required /> -->
+                         
                         </div>
                       </div>
                     </div>
-                    <!--   <div class="row mb-3">
-                      <div class="col">
-                        <div class="form-group">
-                          <textarea class="form-control" name="message" placeholder="Your Message"
-                            [(ngModel)]="model.message" #message="ngModel"
-                            [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
-                        </div>
-                      </div>
-                    </div> -->
+                    
 
                     <div class="row">
                       <div class="col">
@@ -109,18 +78,7 @@
 
                   </div>
                 </div>
-                <!--   <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="mb-0">
-                      <strong>Phone</strong>
-                    </p>
-                    <p class="pb-2">+91 9677633146</p>
-                    <p class="mb-0">
-                      <strong>Email</strong>
-                    </p>
-                    <p>adhityamurali03@gmail.com</p>
-                  </div>
-                </div> -->
+               
               </div>
             </div>
           </div>
@@ -128,5 +86,63 @@
       </div>
     </div>
   </div>
+</div>  #100f0f;-->
+
+<div class="column col-lg-12" id="contact" style="background-color: #334c5f;border-bottom: 1px solid green;">
+    <div class="contact-box">
+        <h2 style="color:white">Get In Touch</h2>
+        <form id="ajax-contact" method="post" action="/" onsubmit="validateCaptcha()">
+            <!-- CONTACT FORM mailer.php-->
+            <div class="row">
+                <div class="column col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" autocomplete="off" placeholder="Your Name" name="name" id="name" required="" type="text">
+                    </div>
+                    <!--/.form-group-->
+                </div>
+                <!--/.col-->
+                <div class="column col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" autocomplete="off" placeholder="your email ID" name="email" id="email" required="" type="email">
+                    </div>
+                    <!--/.form-group-->
+                </div>
+                <!--/.col-->
+            </div>
+            <!--/.row-->
+            <div class="row">
+                <div class="column col-12">
+                    <div class="form-group">
+                        <input class="form-control" autocomplete="off" placeholder="Subject" name="subject" id="subject" required="" type="text">
+                    </div>
+                    <!--/.form-group-->
+                </div>
+                <!--/.col-->
+            </div>
+            <!--/.row-->
+            <div class="row">
+                <div class="column col-12">
+                    <!-- <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension> -->
+                    <div class="form-group">
+                        <textarea id="textarea" class="form-control" required="" placeholder="Description" name="message" spellcheck="false"></textarea>
+                    </div>
+                    <!--/.form-group-->
+                </div>
+                <!--/.col-->
+            </div>
+            <!--/.row-->
+
+            <div class="row">
+
+                <div class="column col-md-6 ct-submit">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success" id="btn-submit">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Submit &nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="form-messages"></div>
+    </div>
+    <!--/.contact-box-->
 </div>
 <ng-snotify class="material"></ng-snotify>
